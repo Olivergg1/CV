@@ -110,6 +110,10 @@ footer {
   cursor: pointer;
 }
 
+.only-print {
+  display: none;
+}
+
 @media print {
   p {
     font-size: 0.8rem;
@@ -147,7 +151,11 @@ footer {
     text-decoration: none;
   }
 
-  .skills {
-    page-break-before: always;
+  .page-break {
+      page-break-before: always;
+  }
+
+  .only-print {
+    display: block;
   }
 }
